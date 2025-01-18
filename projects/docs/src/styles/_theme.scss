@@ -32,6 +32,8 @@
   --ng-doc-guide-tag-background: #7A45E5;
   --ng-doc-guide-tag-color: var(--ng-doc-base-0);
   --ng-doc-navbar-border: 1px solid var(--ng-doc-base-4);
+
+  --ng-doc-link-color: #5c536e;
 }
 
 // shiki theme to match dark theme
@@ -67,6 +69,10 @@ code {
   [class$="-string"] {
     color: #AAD94C !important
   }
+}
+
+.ng-doc-navigation-controls {
+  display: none !important;
 }
 
 

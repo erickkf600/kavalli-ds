@@ -2,26 +2,33 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.0.
 
-## Development server
+# @kds-schematics
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+This package contains a collection of schematics for generating an Angular application.
 
-## Code scaffolding
+## Schematics
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+| Name           | Description                                                                                           |
+| -------------- | ----------------------------------------------------------------------------------------------------- |
+| app-shell      | Generates an app shell for running a server-side version of an app                                    |
+| application    | Generates a new basic app definition in the "projects" subfolder of the workspace                     |
+| class          | Creates a new, generic class definition in the given project                                          |
+| component      | Creates a new, generic component definition in the given project                                      |
+| directive      | Creates a new, generic directive definition in the given project                                      |
+| enum           | Generates a new, generic enum definition in the given project                                         |
+| guard          | Generates a new, generic route guard definition in the given project                                  |
+| interceptor    | Creates a new, generic interceptor definition in the given project                                    |
+| interface      | Creates a new, generic interface definition in the given project                                      |
+| library        | Creates a new, generic library project in the current workspace                                       |
+| module         | Creates a new, generic NgModule definition in the given project                                       |
+| ng-new         | Creates a new project by combining the workspace and application schematics                           |
+| pipe           | Creates a new, generic pipe definition in the given project                                           |
+| resolver       | Creates a new, generic resolver definition in the given project                                       |
+| service        | Creates a new, generic service definition in the given project                                        |
+| service-worker | Pass this schematic to the "run" command to create a service worker                                   |
+| web-worker     | Creates a new, generic web worker definition in the given project                                     |
+| workspace      | Initializes an empty workspace and adds the necessary dependencies required by an Angular application |
 
-## Build
+## Disclaimer
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+While the schematics when executed via the Angular CLI and their associated options are considered stable, the programmatic APIs are not considered officially supported and are not subject to the breaking change guarantees of SemVer.

@@ -1,0 +1,8 @@
+@function rem($size) {
+   $remSize: $size / 16;
+   @return #{$remSize}rem;
+}
+
+@function font($weight, $size, $height, $family, $style: normal, $variant: normal, ) {
+  @return $style $variant $weight $size/$height $family
+}

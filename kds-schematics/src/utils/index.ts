@@ -7,6 +7,11 @@ export const findPublicApiFile = async (tree: Tree, project: string): Promise<st
   return `/${workspace.projects.get(project)?.sourceRoot}/public-api.ts`
 };
 
+export const categoryModulePath = async (tree: Tree, project: string, category: string): Promise<string | null> => {
+  const workspace: WorkspaceDefinition = await getWorkspace(tree);
+  return `/${workspace.projects.get(project)?.sourceRoot}/lib/${category}/${category}.module.ts`
+};
+
 export const findDocPath = async (tree: Tree, section: string): Promise<string> => {
   const workspace: WorkspaceDefinition = await getWorkspace(tree);
   return `/${workspace.projects.get('docs')?.sourceRoot}/app/pages/${section}/`
