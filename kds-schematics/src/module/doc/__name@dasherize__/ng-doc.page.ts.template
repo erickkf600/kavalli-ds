@@ -1,0 +1,20 @@
+import { NgDocPage } from '@ng-doc/core';
+import <%= classify(libSection) %>Category from '../ng-doc.category';
+import { <%= classify(name) %>Module, <%= classify(name) %>Component } from '@kds-angular';
+
+const <%= classify(name) %>Page: NgDocPage = {
+	title: `<%= classify(name) %>`,
+	mdFile: './index.md',
+  category:   <%= classify(libSection) %>Category,
+
+  // Playground Implement
+  imports: [<%= classify(name) %>Module],
+  playgrounds: {
+    TagPlayground: {
+      target: <%= classify(name) %>Component,
+      template: `<ng-doc-selector>example</ng-doc-selector>`
+    }
+  }
+};
+
+export default <%= classify(name) %>Page;

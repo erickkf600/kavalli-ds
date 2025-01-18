@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "baseUrl": "tsconfig",
+    "lib": ["es2018", "dom"],
+    "declaration": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noEmitOnError": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "rootDir": "src/",
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strictNullChecks": true,
+    "target": "es6"
+    // "outDir": "../dist/kds-schematics",
+  },
+  "include": ["src/**/*"],
+  "exclude": ["src/*/files/**/*"]
+}
+  // SCRIPT PARA COPIAR OS AQUIVOS
+  // "copy:schemas": "cp --parents ./src/*/schema.json ../dist/kds-schematics",
+  // "copy:files": "cp --parents -p ./src/*/files/** ../dist/kds-schematics",
+  // "copy:collection": "cp ./src/collection.json ../dist/kds-schematics/collection.json",
+  // "copy:package": "cp ./package.json ../dist/kds-schematics/package.json",
+  // "postbuild": "npm run copy:schemas && npm run copy:files && npm run copy:collection"

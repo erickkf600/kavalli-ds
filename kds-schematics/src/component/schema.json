@@ -1,0 +1,74 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "SchematicsKavalliIds",
+  "title": "Kavalli Ids Options Schema",
+  "type": "object",
+  "properties": {
+    "path": {
+      "type": "string",
+      "format": "path",
+      "$default": {
+        "$source": "workingDirectory"
+      },
+      "description": "The path to create the component.",
+      "visible": false
+    },
+    "project": {
+      "type": "string",
+      "description": "The name of the project.",
+      "$default": {
+        "$source": "projectName"
+      }
+    },
+    "name": {
+      "type": "string",
+      "description": "The name of the component.",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      },
+      "x-prompt": "What should be the name of the component?"
+    },
+    "libSection": {
+      "type": "string",
+      "description": "The name of the section of the storybook.",
+      "enum": ["components", "functions", "styles", "utils"],
+      "x-prompt": {
+        "message": "Set the name the section of the storybook",
+        "type": "list",
+        "items": [
+          "components",
+          "functions",
+          "styles",
+          "utils"
+        ]
+      }
+    },
+    "skipImport": {
+      "type": "boolean",
+      "description": "Flag to skip the module import.",
+      "default": true
+    },
+    "component": {
+      "type": "string",
+      "description": "Allows specification of the declaring component.",
+      "alias": "c"
+    },
+    "defaultSchematic": {
+      "type": "boolean",
+      "description": "Use angular default Schematics",
+      "default": false
+    },
+    "storybookFile": {
+      "type": "boolean",
+      "description": "Create storybook file?(y/n)"
+    },
+    "standalone": {
+      "description": "Whether the generated component is standalone.",
+      "type": "boolean",
+      "default": false,
+      "x-prompt": "Would you like to generate a standalone component?"
+    }
+  },
+  "required": ["name", "standalone", "libSection"]
+}

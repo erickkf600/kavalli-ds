@@ -1,0 +1,31 @@
+{
+  "name": "kds-schematics",
+  "version": "0.0.0",
+  "description": "A blank schematics",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsc -p tsconfig.json -w"
+  },
+  "keywords": [
+    "schematics",
+    "kavalli",
+    "kavalli-ds",
+    "kavalli-schematics",
+    "kds-schematics"
+  ],
+  "exports": {
+    "./package.json": "./package.json"
+  },
+  "author": "kavalli",
+  "license": "MIT",
+  "schematics": "./src/collection.json",
+  "dependencies": {
+    "@angular-devkit/core": "^17.0.0",
+    "@angular-devkit/schematics": "^17.0.0",
+    "@angular/cdk": "^17.3.10",
+    "typescript": "~5.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.18.0"
+  }
+}
