@@ -4,6 +4,7 @@ import { Component, ElementRef, Input, ViewEncapsulation } from '@angular/core';
   selector: '[kdsButton]',
   template: `<ng-content></ng-content>`,
   styleUrls: ['./kds-button.component.scss'],
+  standalone: true,
   encapsulation: ViewEncapsulation.None,
   host: {
     '[class.kds-button]':'true',

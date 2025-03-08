@@ -1,5 +1,19 @@
-# {{ NgDocPage.title }}
+#### Implementação
+```typescript
+import { KdsIconsComponent } from '@kds-angular/icons';
+````
+E adicione no `imports` modulo
+```typescript
+@NgModule({
+  imports: [
+    KdsIconsComponent
+  ],
+})
+````
 
-It's time to write some awesome docs!
+#### Playground
+{{ NgDocActions.playground("IconPlayground") }}
 
-<!-- {{ NgDocActions.playground("TagPlayground") }} -->
+#### Pesquisar ícone
+{{ NgDocActions.demo("KdsIconsListComponent", {container: false}) }}
+

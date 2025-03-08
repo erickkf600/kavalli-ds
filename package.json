@@ -8,6 +8,7 @@
     "link": "npm link ./kds-schematics",
     "config": "npm run schema && npm run link",
     "test": "ng test",
+    "build:doc": "ng build docs",
     "build:gulp": "gulp",
     "build:packgr": "ng-packagr -p projects/kds-angular/ng-package.json",
     "build:lib": "npm run build:packgr && npm run build:gulp"
@@ -43,7 +44,6 @@
     "gulp-concat": "^2.6.1",
     "gulp-run": "^1.7.1",
     "gulp-sass": "^5.1.0",
-    "gulp-typescript": "^6.0.0-alpha.1",
     "jasmine-core": "~5.1.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",

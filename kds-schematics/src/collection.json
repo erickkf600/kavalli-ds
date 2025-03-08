@@ -6,16 +6,6 @@
       "factory": "./add-lib/index#addLib",
       "schema": "./add-lib/schema.json"
     },
-    "component": {
-      "description": "Create a component with kavalli architecture",
-      "factory": "./component/index#component",
-      "schema": "./component/schema.json"
-    },
-    "c": {
-      "description": "Create a component with kavalli architecture",
-      "factory": "./component/index#component",
-      "schema": "./component/schema.json"
-    },
     "ng-add": {
       "description": "Add library and configure",
       "factory": "./ng-add/index#ngAdd",

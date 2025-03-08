@@ -1,20 +1,12 @@
 import { NgDocPage } from '@ng-doc/core';
 import UtilsCategory from '../ng-doc.category';
-
+import { ClickOutsideDemoComponent } from './demos.component'
 
 const KdsDirectivesPage: NgDocPage = {
 	title: `Directives`,
 	mdFile: './index.md',
   category:   UtilsCategory,
-
-  // Playground example
-  // imports: [Module],
-  // playgrounds: {
-  //   TagPlayground: {
-  //     target: Component,
-  //     template: `<component>example</component>`
-  //   }
-  // }
+  demos: { ClickOutsideDemoComponent }
 };
 
 export default KdsDirectivesPage;

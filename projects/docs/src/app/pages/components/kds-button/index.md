@@ -1,5 +1,7 @@
 # {{ NgDocPage.title }}
 
-It's time to write some awesome docs!
+#### Botão padrão
+{{ NgDocActions.playground("ButtonPlayground") }}
 
-{{ NgDocActions.playground("TagPlayground") }}
+#### Botão com ícone
+{{ NgDocActions.playground("ButtonIconPlayground") }}

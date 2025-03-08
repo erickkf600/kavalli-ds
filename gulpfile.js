@@ -3,7 +3,6 @@ const sass = require('gulp-sass')(require('sass'));
 const del = require("del");
 let cleanCSS = require("gulp-clean-css");
 const concat = require("gulp-concat");
-const ts = require('gulp-typescript');
 var basePath = "./projects/kds-angular/src/";
 
 gulp.task("clean", () => {
@@ -18,4 +17,5 @@ return gulp.src([basePath+"styles.scss", basePath+"**/*.component.scss"])
 .pipe(gulp.dest("./dist/kds-angular/styles/"));
 });
 
-gulp.task("default", gulp.series(["clean","compose-css"]));
+
+gulp.task("default", gulp.series(["clean", "compose-css"]));

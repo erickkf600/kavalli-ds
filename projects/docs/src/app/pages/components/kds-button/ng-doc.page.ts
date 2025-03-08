@@ -1,6 +1,6 @@
 import { NgDocPage } from '@ng-doc/core';
 import ComponentsCategory from '../ng-doc.category';
-import { KdsButtonModule, KdsButtonComponent } from '@kds-angular';
+import { KdsButtonComponent } from '@kds-angular';
 
 const KdsButtonPage: NgDocPage = {
 	title: `Button`,
@@ -8,11 +8,20 @@ const KdsButtonPage: NgDocPage = {
   category:   ComponentsCategory,
 
   // Playground Implement
-  imports: [KdsButtonModule],
+  // imports: [KdsButtonModule],
   playgrounds: {
-    TagPlayground: {
+    ButtonPlayground: {
       target: KdsButtonComponent,
-      template: `<button kdsButton>teste botão</button>`
+      template: ` <button kdsButton>teste botão</button> `
+    },
+    ButtonIconPlayground: {
+      target: KdsButtonComponent,
+      template: `
+      <button kdsButton>
+        teste botão com icone
+        <span class="">></span>
+      </button>
+      `
     }
   }
 };

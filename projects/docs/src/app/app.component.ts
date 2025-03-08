@@ -1,6 +1,6 @@
-import { NgDocRootComponent, NgDocNavbarComponent, NgDocSidebarComponent } from "@ng-doc/app";
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { NgDocNavbarComponent, NgDocRootComponent, NgDocSidebarComponent } from "@ng-doc/app";
 
 @Component({
   selector: 'app-docs-root',

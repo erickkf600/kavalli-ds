@@ -1,12 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { KdsBreadcrumbsModule } from './kds-breadcrumbs';
-import { KdsButtonModule } from './kds-button';
 import { KdsCardFlagsModule } from './kds-card-flags';
 import { KdsCarrouselModule } from './kds-carrousel';
 import { KdsDialogModule } from './kds-dialog';
 import { KdsHeaderModule } from './kds-header';
-import { KdsIconsModule } from './kds-icons';
 import { KdsImageCropperModule } from './kds-image-cropper';
 import { KdsInputModule } from './kds-input';
 import { KdsLoaderModule } from './kds-loader';
@@ -32,11 +30,9 @@ import { KdsTooltipModule } from './kds-tooltip';
     KdsLoaderModule,
     KdsInputModule,
     KdsImageCropperModule,
-    KdsIconsModule,
     KdsHeaderModule,
     KdsCarrouselModule,
     KdsCardFlagsModule,
-    KdsButtonModule,
     KdsBreadcrumbsModule,
     CommonModule,
   ],
@@ -52,11 +48,9 @@ import { KdsTooltipModule } from './kds-tooltip';
     KdsLoaderModule,
     KdsInputModule,
     KdsImageCropperModule,
-    KdsIconsModule,
     KdsHeaderModule,
     KdsCarrouselModule,
     KdsCardFlagsModule,
-    KdsButtonModule,
     KdsBreadcrumbsModule,
   ]
 })

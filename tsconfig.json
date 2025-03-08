@@ -13,7 +13,10 @@
       ],
       "@kds-angular": [
         "projects/kds-angular/src/public-api"
-      ]
+      ],
+      "@component/*": [
+        "projects/kds-angular/src/lib/components/*"
+      ],
     },
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
@@ -30,6 +33,7 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
+    "resolveJsonModule": true,
     "target": "ES2022",
     "module": "ES2022",
     "useDefineForClassFields": false,

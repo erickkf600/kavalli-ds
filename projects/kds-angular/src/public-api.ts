@@ -16,3 +16,4 @@ export * from './lib/components/kds-table/index';
 export * from './lib/components/kds-toast/index';
 export * from './lib/components/kds-toggle/index';
 export * from './lib/components/kds-tooltip/index';
+export * from './lib/utils/directives/index';

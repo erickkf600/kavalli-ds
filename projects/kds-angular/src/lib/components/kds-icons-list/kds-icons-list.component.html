@@ -1,0 +1,23 @@
+<div class="container" *ngIf="iconsData">
+  <div>
+    <input type="search" class="search" [(ngModel)]="searchTerm" placeholder="Pesquisar ícones..." />
+  </div>
+  <div class="icon-list">
+    <div class="icon-item" *ngFor="let icon of filteredIcons()">
+      <div class="icon-preview">
+        <svg class="icon" width="60" height="60" xmlns="http://www.w3.org/2000/svg">
+          <!-- Usar o path corretamente -->
+          <path [attr.d]="icon.icon.paths[0]" class="icon-path"></path>
+        </svg>
+      </div>
+      <div class="icon-details">
+        <h3 class="icon-name">{{ icon.properties.name }}</h3>
+        <button class="copy-name" [cdkCopyToClipboard]="icon.properties.name" (cdkCopyToClipboardCopied)="copyIconName(icon.properties.name)">copiar</button>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="showAlert$ | async" class="mini-alert">
+    {{ alertMessage$ | async }}
+  </div>
+</div>
+
